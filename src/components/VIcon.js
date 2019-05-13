@@ -1,11 +1,11 @@
-import IconPrototype from './Prototypes/IconPrototype';
-
+import {renderIcon} from './Prototypes/ElementPrototype';
 export default {
-    mixins: [IconPrototype],
+    name: 'v-icon',
+    functional: true,
     props: {
         icon: String
     },
     render(h) {
-        return this.renderIcon(h, this.icon)
+        return renderIcon(h, this.icon)
     },
 }

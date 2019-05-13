@@ -1,9 +1,9 @@
 import ThemePrototype from './Prototypes/ThemePrototype'
-import IconPrototype from './Prototypes/IconPrototype'
+import {renderIcon} from './Prototypes/ElementPrototype'
 
 export default {
-    name: 'vButton',
-    mixins: [ThemePrototype, IconPrototype],
+    name: 'v-button',
+    mixins: [ThemePrototype],
     props: {
         isLink: {
             type: Boolean,
@@ -49,7 +49,7 @@ export default {
         let subContent = this.$slots.default;
         
         if (this.splited) {
-            const iconElement = this.renderIcon(h, this.splitIcon)
+            const iconElement = renderIcon(h, this.splitIcon)
             subContent = [
                 h('span', {attrs:{class:'icon'}}, [iconElement]),
                 h('span', {attrs:{class:'text'}}, [...subContent])
