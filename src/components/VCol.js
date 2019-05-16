@@ -1,4 +1,4 @@
-import {renderDiv} from './Prototypes/ElementPrototype';
+import {renderDiv} from '../Prototypes/ElementPrototype';
 
 export default {
     name: 'v-col',

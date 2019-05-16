@@ -1,5 +1,5 @@
-import ThemePrototype from './Prototypes/ThemePrototype'
-import {renderIcon} from './Prototypes/ElementPrototype'
+import ThemePrototype from '../Prototypes/ThemePrototype'
+import {renderIcon} from '../Prototypes/ElementPrototype'
 
 export default {
     name: 'v-button',

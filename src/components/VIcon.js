@@ -1,4 +1,4 @@
-import {renderIcon} from './Prototypes/ElementPrototype';
+import {renderIcon} from '../Prototypes/ElementPrototype';
 export default {
     name: 'v-icon',
     functional: true,
