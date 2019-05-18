@@ -10,6 +10,9 @@ import VNavtop from './navtop/VNavtop';
 import VLogo from './sidebar/VLogo';
 import VSearch from './navtop/VSearch';
 import VUsernav from './navtop/VUsernav';
+import VNavitem from './sidebar/VNavitem';
+import VDivider from './sidebar/VDivider';
+import VHeader from './sidebar/VHeader';
 
 export default {
     render(h) {
@@ -17,6 +20,17 @@ export default {
             <div id="wrapper">
                 <VSidebar>
                     <VLogo icon="fas fa-laugh-wink" label="SB ADMIN"></VLogo>
+                    <VDivider></VDivider>
+                    <VNavitem label="Painel" icon="fas fa-fw fa-chart-line"></VNavitem>
+                    <VDivider m-bottom={3}></VDivider>
+                    <VHeader label="Interface"></VHeader>
+                    <VNavitem label="Components" icon="fas fa-fw fa-cog"></VNavitem>
+                    <VNavitem label="Utilities" icon="fas fa-fw fa-wrench"></VNavitem>
+                    <VDivider m-bottom={3}></VDivider>
+                    <VHeader label="Addons"></VHeader>
+                    <VNavitem label="Pages" icon="fas fa-fw fa-folder"></VNavitem>
+                    <VNavitem label="Charts" icon="fas fa-fw fa-chart-area"></VNavitem>
+                    <VNavitem label="Tables" icon="fas fa-fw fa-table"></VNavitem>
                 </VSidebar>
                 <VContent>
                     <VNavtop>

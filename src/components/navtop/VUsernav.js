@@ -9,6 +9,10 @@ export default {
         username: {
             type: String,
             default: 'John Doe'
+        },
+        userImage: {
+            type: String,
+            default: 'https://source.unsplash.com/9bYTpXfiKNM/60x60'
         }
     },
     render(h) {
@@ -40,7 +44,7 @@ export default {
                 <li class="nav-item dropdown no-arrow show">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">{this.username}</span>
-                        <img class="img-profile rounded-circle" src="https://source.unsplash.com/9bYTpXfiKNM/60x60" />
+                        <img class="img-profile rounded-circle" src={this.userImage} />
                     </a>
                     <VUser></VUser>
                 </li>
