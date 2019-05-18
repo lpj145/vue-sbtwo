@@ -8,6 +8,8 @@ import VContent from './VContent';
 import VSidebar from './sidebar/VSidebar';
 import VNavtop from './navtop/VNavtop';
 import VLogo from './sidebar/VLogo';
+import VSearch from './navtop/VSearch';
+import VUsernav from './navtop/VUsernav';
 
 export default {
     render(h) {
@@ -17,7 +19,10 @@ export default {
                     <VLogo icon="fas fa-laugh-wink" label="SB ADMIN"></VLogo>
                 </VSidebar>
                 <VContent>
-                    <VNavtop></VNavtop>
+                    <VNavtop>
+                        <VSearch></VSearch>
+                        <VUsernav></VUsernav>
+                    </VNavtop>
                     <VContainer fluid>
                         <VCol col="12">
                             <VCard bodied>

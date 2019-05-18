@@ -1,13 +1,28 @@
-import VSearch from './VSearch';
-
 export default {
     name: 'v-navtop',
     functional: true,
+    props: {
+        noShadow: Boolean
+    },
 
     render(h, ctx) {
+        const {props, slots} = ctx;
+
+        const classes = {
+            'navbar': true,
+            'navbar-expand': true,
+            'navbar-light': true,
+            'bg-white': true,
+            'topbar': true,
+            'mb-4': true,
+            'static-top': true,
+            'shadow': props.noShadow ? false : true
+        };
+
+
         return (
-            <div class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                <VSearch></VSearch>
+            <div {...{class: classes}}>
+                {slots().default}
             </div>
         )
     },
