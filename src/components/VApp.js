@@ -14,6 +14,7 @@ import VNavitem from './sidebar/VNavitem';
 import VDivider from './sidebar/VDivider';
 import VHeader from './sidebar/VHeader';
 import VBanner from './VBanner';
+import VTitle from './VTitle';
 
 export default {
     render(h) {
@@ -39,14 +40,15 @@ export default {
                         <VUsernav></VUsernav>
                     </VNavtop>
                     <VContainer fluid>
+                        <VTitle level="4">Dashboard</VTitle>
                         <VCol col="12">
                             <VCard bodied>
                                 <template slot="header">Teste de card!</template>
                                 Apois é isso!
                             </VCard>
                         </VCol>
-                        <VCol col="6">
-                            <VBanner label="Money Earn" icon="fas fa-money-bill-alt" border theme="success">
+                        <VCol col="4">
+                            <VBanner label="Money Earn" icon="fas fa-money-bill-alt" border theme="danger">
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                             </VBanner>
                         </VCol>
