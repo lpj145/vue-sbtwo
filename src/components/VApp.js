@@ -13,6 +13,7 @@ import VUsernav from './navtop/VUsernav';
 import VNavitem from './sidebar/VNavitem';
 import VDivider from './sidebar/VDivider';
 import VHeader from './sidebar/VHeader';
+import VBanner from './VBanner';
 
 export default {
     render(h) {
@@ -28,7 +29,7 @@ export default {
                     <VNavitem label="Utilities" icon="fas fa-fw fa-wrench"></VNavitem>
                     <VDivider m-bottom={3}></VDivider>
                     <VHeader label="Addons"></VHeader>
-                    <VNavitem label="Pages" icon="fas fa-fw fa-folder"></VNavitem>
+                    <VNavitem label="Pages" grouped icon="fas fa-fw fa-folder"></VNavitem>
                     <VNavitem label="Charts" icon="fas fa-fw fa-chart-area"></VNavitem>
                     <VNavitem label="Tables" icon="fas fa-fw fa-table"></VNavitem>
                 </VSidebar>
@@ -43,6 +44,11 @@ export default {
                                 <template slot="header">Teste de card!</template>
                                 Apois é isso!
                             </VCard>
+                        </VCol>
+                        <VCol col="6">
+                            <VBanner label="Money Earn" icon="fas fa-money-bill-alt" border theme="success">
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                            </VBanner>
                         </VCol>
                     </VContainer>
                 </VContent>
