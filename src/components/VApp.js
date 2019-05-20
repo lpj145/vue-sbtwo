@@ -43,11 +43,11 @@ export default {
                         <VTitle level="4">Dashboard</VTitle>
                         <VCol col="12">
                             <VCard bodied>
-                                <template slot="header">Teste de card!</template>
-                                Apois é isso!
+                                <template slot="header">Is a test card!</template>
+                                Something go a body.
                             </VCard>
                         </VCol>
-                        <VCol col="4">
+                        <VCol col="12">
                             <VBanner label="Money Earn" icon="fas fa-money-bill-alt" border theme="danger">
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                             </VBanner>
