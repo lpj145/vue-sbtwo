@@ -1,4 +1,8 @@
 # vue-sbtwo
+Is a vue components to sb admin 2, you can see most details on: https://github.com/BlackrockDigital/startbootstrap-sb-admin-2
+bit a bit some components are free, enjoy, test and open yours issues.
+
+![Alt text](ss.png?raw=true "Title")
 
 ## Project setup
 ```
@@ -27,4 +31,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-![Alt text](ss.png?raw=true "Title")
